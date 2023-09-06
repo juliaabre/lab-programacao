@@ -8,9 +8,9 @@ int main(){
     printf("Informe o valor da compra: ");
     scanf("%f",&valor_compra);
 
-    if(fmod(valor_compra,3)){
-        entrada = (valor_compra/3) + fmod(valor_compra,3);
+    if(fmod(valor_compra,3.0)){
         prestacoes = valor_compra/3;
+        entrada = prestacoes + (valor_compra - 3*prestacoes);
     } else {
         entrada = (valor_compra/3);
         prestacoes = valor_compra/3;
